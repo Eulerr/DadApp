@@ -1,11 +1,11 @@
 // Service Worker for DadApp PWA
 const CACHE_NAME = 'dadapp-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/manifest.json'
+  './',
+  './index.html',
+  './style.css',
+  './script.js',
+  './manifest.json'
 ];
 
 // Install event
@@ -66,20 +66,16 @@ async function sendReminderNotifications() {
 async function showNotification(reminder) {
   const options = {
     body: reminder.text,
-    icon: '/icon-192.png',
-    badge: '/icon-192.png',
     tag: `reminder-${reminder.id}`,
     requireInteraction: true,
     actions: [
       {
         action: 'mark-done',
-        title: 'Mark Done',
-        icon: '/icon-192.png'
+        title: 'Mark Done'
       },
       {
         action: 'snooze',
-        title: 'Snooze 10min',
-        icon: '/icon-192.png'
+        title: 'Snooze 10min'
       }
     ]
   };

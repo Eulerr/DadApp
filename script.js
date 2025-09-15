@@ -23,7 +23,7 @@ class DadApp {
     async registerServiceWorker() {
         if ('serviceWorker' in navigator) {
             try {
-                const registration = await navigator.serviceWorker.register('/sw.js');
+                const registration = await navigator.serviceWorker.register('./sw.js');
                 console.log('Service Worker registered successfully');
                 
                 // Listen for messages from service worker
@@ -361,7 +361,6 @@ class DadApp {
         if ('Notification' in window && Notification.permission === 'granted') {
             const notification = new Notification('🧠 DadApp Reminder', {
                 body: reminder.text,
-                icon: '/icon-192.png',
                 tag: `reminder-${reminder.id}`,
                 requireInteraction: true
             });
@@ -398,7 +397,12 @@ class DadApp {
             const installPrompt = document.getElementById('installPrompt');
             installPrompt.classList.add('show');
             
-            document.getElementById('installBtn').addEventListener('click', async () => {
+            // Remove any existing event listeners to prevent duplicates
+            const installBtn = document.getElementById('installBtn');
+            const newInstallBtn = installBtn.cloneNode(true);
+            installBtn.parentNode.replaceChild(newInstallBtn, installBtn);
+            
+            newInstallBtn.addEventListener('click', async () => {
                 if (deferredPrompt) {
                     deferredPrompt.prompt();
                     const { outcome } = await deferredPrompt.userChoice;
@@ -407,6 +411,12 @@ class DadApp {
                     this.hideInstallPrompt();
                 }
             });
+        });
+        
+        // Handle app installed event
+        window.addEventListener('appinstalled', (evt) => {
+            console.log('App was installed');
+            this.hideInstallPrompt();
         });
     }
 
