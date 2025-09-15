@@ -1,0 +1,26 @@
+{
+  "name": "DadApp - Remember Everything",
+  "short_name": "DadApp",
+  "description": "Never forget anything when you walk out the door",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMyNTYzZWIiLz4KPHBhdGggZD0iTTk2IDQ4QzExMi41MzEgNDggMTI2IDYxLjQ2OSAxMjYgNzhWMTE0QzEyNiAxMzAuNTMxIDExMi41MzEgMTQ0IDk2IDE0NEM3OS40NjkgMTQ0IDY2IDEzMC41MzEgNjYgMTE0Vjc4QzY2IDYxLjQ2OSA3OS40NjkgNDggOTYgNDhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNDggMTQ0SDQwVjE2MEM0MCAxNjguODM3IDQ3LjE2MyAxNzYgNTYgMTc2SDEzNkMxNDQuODM3IDE3NiAxNTIgMTY4LjgzNyAxNTIgMTYwVjE0NEgxNDRWMTYwSDE0NFYxNDRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMyNTYzZWIiLz4KPHBhdGggZD0iTTI1NiAxMjhDMzAwLjE4MSAxMjggMzM2IDE2My44MTkgMzM2IDIwOFYzMDRDMzM2IDM0OC4xODEgMzAwLjE4MSAzODQgMjU2IDM4NEMyMTEuODE5IDM4NCAxNzYgMzQ4LjE4MSAxNzYgMzA0VjIwOEMxNzYgMTYzLjgxOSAyMTEuODE5IDEyOCAyNTYgMTI4WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEyOCAzODRIMTIwVjQyNEMxMjAgNDUwLjUwOSAxMjcuMTYzIDQ1OCAxMzYgNDU4SDM3NkMzODQuODM3IDQ1OCAzOTIgNDUwLjUwOSAzOTIgNDI0VjM4NEgzODRWMzI0SDM4NFYzODRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}
