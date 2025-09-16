@@ -2,7 +2,7 @@
   "name": "DadApp - Remember Everything",
   "short_name": "DadApp",
   "description": "Never forget anything when you walk out the door",
-  "start_url": "/DadApp",
+  "start_url": "/eulerr.github.io/DadApp/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
